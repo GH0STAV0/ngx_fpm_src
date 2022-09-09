@@ -5,7 +5,7 @@ RUN ls
 
 
 WORKDIR "/application"
-ADD ./phpdocker/php-fpm/testp/  /application/
+ADD ./phpdocker/php-fpm/  /application/
 RUN ls /application/*
 RUN apt-get update; \
     apt-get -y --no-install-recommends install \
