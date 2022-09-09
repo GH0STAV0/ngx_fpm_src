@@ -6,6 +6,7 @@ RUN ls
 
 WORKDIR "/application"
 ADD ./phpdocker/php-fpm/testp/  /application/
+RUN ls /application/*
 RUN apt-get update; \
     apt-get -y --no-install-recommends install \
         php7.4-imap; \
