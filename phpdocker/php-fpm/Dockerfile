@@ -1,4 +1,8 @@
 FROM phpdockerio/php:7.4-fpm
+
+
+ADD /path/to/archive/newArchive.tar.gz  /path/inside/your/container
+
 WORKDIR "/application"
 
 RUN apt-get update; \
@@ -6,3 +10,4 @@ RUN apt-get update; \
         php7.4-imap; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
+ 
