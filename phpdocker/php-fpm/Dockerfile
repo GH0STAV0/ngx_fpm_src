@@ -12,4 +12,6 @@ RUN apt-get update; \
         php7.4-imap; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
+    
+ EXPOSE 8080
  
