@@ -2,7 +2,7 @@ FROM phpdockerio/php:7.4-fpm
 RUN pwd
 RUN ls
 
-ADD ./testp  /application
+#ADD ./testp  /application
 
 WORKDIR "/application"
 
