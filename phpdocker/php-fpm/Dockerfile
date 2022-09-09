@@ -1,7 +1,7 @@
 FROM phpdockerio/php:7.4-fpm
 
 
-ADD /path/to/archive/newArchive.tar.gz  /path/inside/your/container
+ADD test  /application
 
 WORKDIR "/application"
 
