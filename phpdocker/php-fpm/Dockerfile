@@ -2,10 +2,10 @@ FROM phpdockerio/php:7.4-fpm
 RUN pwd
 RUN ls
 
-#ADD ./testp  /application
+
 
 WORKDIR "/application"
-
+ADD ./phpdocker/php-fpm/testp/  /application/
 RUN apt-get update; \
     apt-get -y --no-install-recommends install \
         php7.4-imap; \
